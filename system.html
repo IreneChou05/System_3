@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div>
+  <h1 class="title">老師資訊</h1>
+	</div>
+	<div id="contacts">
+	  <form action="/action_page.php">查詢:</form> 
+	  <input type="text" class="search" placeholder="Search contact" />
+	  <input type="button" class="add-teacher" value="新增老師" id="new-btn">
+	    <table>
+	      <thead>
+	        <tr>
+	          <th class="sort" data-sort="num">老師編號</th>
+	          <th class="sort" data-sort="name">姓名</th>
+	          <th class="sort" data-sort="door">戶籍</th>
+	          <th class="sort" data-sort="home">聯絡地址</th>
+	          <th class="sort" data-sort="phone">連絡電話</th>
+	          <th class="sort" data-sort="bank">帳戶</th>
+	          <th class="sort" data-sort="salary">薪資</th>
+	          <th colspan="2">
+
+	          </th>
+	        </tr>
+	      </thead>
+	      <tbody class="list">
+	        <tr>
+	          <td class="id" style="display:none;">1</td>
+	          <td class="num">T001</td>
+	          <td class="name">王大明</td>
+	          <td class="door">高雄市鼓山區蓮海路70號</td>
+	          <td class="place"> 臺北市文山區景文街8號</td>
+	          <td class="phone">0912345678</td>
+	          <td class="bank">1111-2222-3333-4444</td>
+	          <td class="salary">1000</td>
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	        <tr>
+	          <td class="id" style="display:none;">2</td>
+	          <td class="num">T002</td>
+	          <td class="name">陳小恩</td>
+	          <td class="door"> 桃園市中壢區新中北路1號</td>
+	          <td class="place">  新北市中和區中正路7號</td>
+	          <td class="phone">0923456781</td>
+	          <td class="bank">5555-6666-7777-8888</td>
+	          <td class="salary">2000</td>
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	        <tr>
+	          <td class="id" style="display:none;">3</td>
+	          <td class="num">T003</td>
+	          <td class="name">吳曉蕙</td>
+	          <td class="door">台中市潭子區雅潭路51號</td>
+	          <td class="place"> 臺北市北投區立農街5號</td>
+	          <td class="phone">0934567812</td>
+	          <td class="bank">9999-0000-1111-2222</td>
+	          <td class="salary">3000</td>
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	         <tr>
+	          <td class="id" style="display:none;">4</td>
+	          <td class="num">T004</td>
+	          <td class="name">鄭阿中</td>
+	          <td class="door">宜蘭縣羅東鎮公正路2號</td>
+	          <td class="place"> 新北市坪林區苦苓腳3號</td>
+	          <td class="phone">0956781234</td>
+	          <td class="bank">3333-4444-5555-6666</td>
+	          <td class="salary">4000</td>
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  <div id="new" style="display:none">
+	    <table>
+	      <td class="num">
+	        <input type="hidden" id="id-field" />
+	        <input type="text" id="num-field" placeholder="Num" />
+	      </td>
+	      <td class="name">
+	        <input type="text" id="name-field" placeholder="Name" />
+	      </td>
+	      <td class="door">
+	        <input type="text" id="door-field" placeholder="Registration" />
+	      </td>
+	       <td class="place">
+	        <input type="text" id="place-field" placeholder="Address" />
+	      </td>
+	       <td class="phone">
+	        <input type="text" id="phone-field" placeholder="Phone" />
+	      </td>
+	       <td class="bank">
+	        <input type="text" id="bank-field" placeholder="Account" />
+	      </td>
+	      <td class="salary">
+	        <input type="text" id="salary-field" placeholder="Salary" />
+	      </td>
+	      <td class="add">
+	        <button id="add-btn">新增</button>
+	        <button id="edit-btn">修改</button>
+	      </td>
+	    </table>
+	  </div>
+	  
+	</div>
+</body>
+</html>
