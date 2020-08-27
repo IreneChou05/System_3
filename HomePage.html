@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>台科大補習班</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #e5e5e5;
+  padding: 1vh;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10vw;
+  height: 60vh; /* only for demonstration, should be removed */
+  background: #73685d;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  font-weight: bold;
+  text-align: center;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #fff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>台科大補習班</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href=".\Course.html"><p style = "color : white;">課程資訊</p></a></li>
+      <li><a href=".\Class.html"><p style = "color : white;">班級資訊</p></a></li>
+      <li><a href=".\system.html"><p style = "color : white;">老師資訊</p></a></li>
+      <li><a href=".\SAttend.html"><p style = "color : white;">老師出席</p></a></li>
+      <li><a href=".\Student.html"><p style = "color : white;">學生資訊</p></a></li>
+      <li><a href=".\Attend.html"><p style = "color : white;">學生出席</p></a></li>
+      <li><a href=".\Place.html"><p style = "color : white;">場地資訊</p></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>歡迎使用台科大補習班管理系統</h1>
+    <image src="https://live.staticflickr.com/4599/25308454458_456aca9015_b.jpg"style="width:80vw;height:45vh;">
+   
+    
+  </article>
+</section>
+
+<footer>
+  <li><a href="C:\Users\Irene NB\Desktop\0306\homework4\HW4.html"><p style = "color : white;">首頁</p></a>
+  </li>
+</footer>
+
+</body>
+</html>

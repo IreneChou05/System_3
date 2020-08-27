@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+	<link rel="stylesheet" href="system.css">
+	<title></title>
+</head>
+<body>
+	<div>
+  		<h1 class="title">課程資訊</h1>
+	</div>
+	<div id="contacts">
+	  <form action="/action_page.php">查詢:</form> 
+	  <input type="text" class="search" placeholder="Search contact" />
+	  <input type="button" class="add-teacher" value="新增班級" id="new-btn">
+	  <ul>
+      <li><a href=".\HomePage.html" id="home"><p style = "color : white; color: black;">回首頁</p></a>
+      </li>
+      </ul>
+	  
+	    <table>
+	      <thead>
+	        <tr>
+	          <th class="sort" data-sort="num">班級編號</th>
+	          <th class="sort" data-sort="name">課程編號</th>
+	          <th class="sort" data-sort="door">場地編號</th>
+	          <th class="sort" data-sort="home">老師編號</th>
+	          <th class="sort" data-sort="phone">時段</th>
+	          <th colspan="2">
+
+	          </th>
+	        </tr>
+	      </thead>
+	      <tbody class="list">
+	        <tr>
+	          <td class="id" style="display:none;">1</td>
+	          <td class="num">C001</td>
+	          <td class="name">L001</td>
+	          <td class="door">P001</td>
+	          <td class="place">T001</td>
+	          <td class="phone">07:00~13:00</td>
+	         
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	        <tr>
+	          <td class="id" style="display:none;">2</td>
+	          <td class="num">C002</td>
+	          <td class="name">L002</td>
+	          <td class="door">P002</td>
+	          <td class="place">T001</td>
+	          <td class="phone">09:00~15:00</td>
+	          
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	        <tr>
+	          <td class="id" style="display:none;">3</td>
+	          <td class="num">C003</td>
+	          <td class="name">L003</td>
+	          <td class="door">P003</td>
+	          <td class="place">T003</td>
+	          <td class="phone">19:00~21:00</td>
+	          
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	         <tr>
+	          <td class="id" style="display:none;">4</td>
+	          <td class="num">C004</td>
+	          <td class="name">L004</td>
+	          <td class="door">P004</td>
+	          <td class="place">T004</td>
+	          <td class="phone">13:00~17:00</td>
+	          
+	          <td class="edit"><button class="edit-item-btn">修改</button></td>
+	          <td class="remove"><button class="remove-item-btn">刪除</button></td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  <div id="new" style="display:none">
+	    <table>
+	      <td class="num">
+	        <input type="hidden" id="id-field" />
+	        <input type="text" id="num-field" placeholder="Class ID" />
+	      </td>
+	      <td class="name">
+	        <input type="text" id="name-field" placeholder="Lesson ID" />
+	      </td>
+	      <td class="door">
+	        <input type="text" id="door-field" placeholder="Place ID" />
+	      </td>
+	       <td class="place">
+	        <input type="text" id="place-field" placeholder="Teacher ID" />
+	      </td>
+	       <td class="phone">
+	        <input type="text" id="phone-field" placeholder="Time" />
+	      </td>
+	      <td class="add">
+	        <button id="add-btn">新增</button>
+	        <button id="edit-btn">修改</button>
+	      </td>
+	    </table>
+	  </div>
+	  
+	</div>
+<script type="text/javascript" src="system.js"></script>
+</body>
+
+</html>
